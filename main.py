@@ -17,6 +17,11 @@ Usage:
 
   # Run the scheduler in foreground (for testing):
   python main.py scheduler
+
+  # Phase 3: evolve agent prompts (Darwin Gödel Machine):
+  python main.py evolve                # evolve all 8 agents
+  python main.py evolve amara kofi     # evolve specific agents
+  python main.py evolve --status       # show evolution history
 """
 
 from __future__ import annotations
@@ -94,5 +99,8 @@ if __name__ == "__main__":
         run_scheduler()
     elif args[0] == "run" and len(args) >= 3:
         run_agent(args[1], " ".join(args[2:]))
+    elif args[0] == "evolve":
+        import subprocess
+        subprocess.run([sys.executable, "self_improve.py"] + args[1:])
     else:
         show_help()

@@ -152,6 +152,16 @@ def atlas_tender_scan():
     log.info("ATLAS: tender scan completed")
 
 
+def evolve_all_agents():
+    """Phase 3: Run one evolution cycle for all 8 agents (Sunday 2am)."""
+    from improver import ABTester
+    from improver.benchmarks import BENCHMARK_TASKS
+    tester = ABTester()
+    results = tester.run_full_team(BENCHMARK_TASKS, verbose=False)
+    improved = sum(1 for r in results if r["winner"] == "mutant")
+    log.info(f"EVOLUTION: {improved}/{len(results)} agents improved this cycle")
+
+
 def nova_weekly_report():
     """NOVA produces the weekly CEO dashboard (Monday 7am)."""
     from tools.crm_tools import CRMTools
@@ -199,5 +209,8 @@ def build_scheduler() -> BackgroundScheduler:
 
     # NOVA — Weekly CEO report (Monday before the team starts work)
     scheduler.add_job(nova_weekly_report, CronTrigger(day_of_week="mon", hour=7, timezone=TZ), id="nova_weekly")
+
+    # PHASE 3 — Automatic prompt evolution every Sunday at 2am
+    scheduler.add_job(evolve_all_agents, CronTrigger(day_of_week="sun", hour=2, timezone=TZ), id="evolution")
 
     return scheduler
