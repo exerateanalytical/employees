@@ -55,3 +55,11 @@ class AmaraSocialAgent(BaseAgent):
             f"Include: teaser post, launch post, benefit post, testimonial post, CTA post.\n"
             f"All posts in EN + FR. Include hashtags, visuals direction, best posting times."
         )
+
+    def record_top_post(self, platform: str, content_summary: str, metrics: str) -> None:
+        """Call this when a post performs exceptionally well to teach AMARA what works."""
+        self.remember_success(
+            approach=f"{platform} post: {content_summary}",
+            result=metrics,
+            context=f"Platform: {platform}",
+        )

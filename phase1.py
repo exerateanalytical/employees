@@ -215,6 +215,9 @@ def run_agent(agent_key: str, custom_task: str = ""):
 
     console.print(f"\n[dim]Running: {task}[/dim]\n")
 
+    mem_stats = agent.memory_stats()
+    console.print(f"[dim]🧠 {agent_info['name']} memory: {mem_stats['total_memories']} stored memories[/dim]\n")
+
     with console.status(f"[green]{agent_info['name']} is working...[/green]", spinner="dots"):
         result = agent.run_task(task)
 

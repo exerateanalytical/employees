@@ -53,3 +53,19 @@ class ChisomServiceAgent(BaseAgent):
             f"Write a polite testimonial request to {customer_name} who purchased {product}.\n"
             f"Make it feel personal and low-pressure. Include EN + FR versions."
         )
+
+    def record_resolved_case(self, customer_name: str, issue: str, resolution: str) -> None:
+        """Store a resolved case so CHISOM learns effective resolutions over time."""
+        self.remember_success(
+            approach=f"Resolution for: {issue}",
+            result=f"Resolved for {customer_name}",
+            context=resolution,
+        )
+
+    def remember_customer(self, name: str, company: str, product: str, notes: str) -> None:
+        """Store a customer profile for future personalised support."""
+        self.remember_entity(
+            entity_type="customer",
+            name=f"{name} ({company})",
+            details=f"Product: {product}. Notes: {notes}",
+        )

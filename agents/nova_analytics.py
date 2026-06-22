@@ -81,3 +81,11 @@ class NovaAnalyticsAgent(BaseAgent):
             f"State your assumptions clearly. Identify the key variables that will "
             f"determine which scenario plays out."
         )
+
+    def record_strategic_insight(self, insight: str, source: str = "NOVA analysis") -> None:
+        """Store a strategic business insight for future CEO reports."""
+        self.learn(insight, source=source, confidence="high")
+
+    def record_winning_strategy(self, strategy: str, outcome: str, context: str = "") -> None:
+        """Store a business strategy that produced measurable results."""
+        self.remember_success(approach=strategy, result=outcome, context=context)

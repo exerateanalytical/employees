@@ -91,3 +91,15 @@ class ZaraContentAgent(BaseAgent):
             f"Keep it under 200 words, conversational, valuable, with one soft CTA. "
             f"English version + French version."
         )
+
+    def record_top_content(self, content_type: str, topic: str, metrics: str) -> None:
+        """Store a piece of content that performed well for future reference."""
+        self.remember_success(
+            approach=f"{content_type}: {topic}",
+            result=metrics,
+            context=f"Content type: {content_type}",
+        )
+
+    def learn_seo_insight(self, insight: str) -> None:
+        """Store an SEO or content insight discovered from data or research."""
+        self.learn(insight, source="ZARA content research")

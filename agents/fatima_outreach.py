@@ -77,3 +77,18 @@ class FatimaOutreachAgent(BaseAgent):
             f"2-email sequence. Lead with how the upgrade serves them better. "
             f"Never feel pushy. Frame as a genuine recommendation. EN + FR."
         )
+
+    def store_customer(self, name: str, company: str, country: str, product: str, notes: str) -> None:
+        """Store a customer profile so FATIMA remembers them across outreach campaigns."""
+        self.remember_entity(
+            entity_type="customer",
+            name=f"{name} — {company} ({country})",
+            details=f"Product: {product}. {notes}",
+        )
+
+    def record_winning_outreach(self, campaign: str, open_rate: str, conversion: str) -> None:
+        """Store an outreach campaign that achieved strong results."""
+        self.remember_success(
+            approach=campaign,
+            result=f"Open rate: {open_rate}. Conversion: {conversion}",
+        )

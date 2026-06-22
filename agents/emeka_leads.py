@@ -73,3 +73,19 @@ class EmekaLeadsAgent(BaseAgent):
             f"Include: leads by tier, sources performance, outreach metrics, "
             f"hot leads ready for handoff, and next week's prospecting priorities."
         )
+
+    def store_lead(self, name: str, company: str, country: str, tier: str, notes: str) -> None:
+        """Store a qualified lead in memory so EMEKA remembers them across sessions."""
+        self.remember_entity(
+            entity_type="lead",
+            name=f"{name} — {company} ({country})",
+            details=f"Tier: {tier}. {notes}",
+        )
+
+    def record_winning_sequence(self, sequence_name: str, response_rate: str, context: str) -> None:
+        """Store a cold outreach sequence that delivered strong results."""
+        self.remember_success(
+            approach=sequence_name,
+            result=f"Response rate: {response_rate}",
+            context=context,
+        )

@@ -81,3 +81,23 @@ class AtlasResearchAgent(BaseAgent):
             f"4. How to report findings\n"
             f"5. Alert triggers that require immediate action"
         )
+
+    def store_competitor(self, name: str, website: str, summary: str) -> None:
+        """Store a competitor profile for recall in future analyses."""
+        self.remember_entity(
+            entity_type="competitor",
+            name=name,
+            details=f"Website: {website}. {summary}",
+        )
+
+    def store_tender(self, title: str, source: str, deadline: str, notes: str) -> None:
+        """Store a tender opportunity so ATLAS tracks it across sessions."""
+        self.remember_entity(
+            entity_type="tender",
+            name=title,
+            details=f"Source: {source}. Deadline: {deadline}. {notes}",
+        )
+
+    def record_market_insight(self, insight: str, country: str) -> None:
+        """Store a strategic market insight for future recall."""
+        self.learn(insight, source=f"ATLAS market research — {country}")

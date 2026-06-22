@@ -74,3 +74,11 @@ class KofiMarketingAgent(BaseAgent):
             f"Include: keyword research direction, content plan, on-page checklist, "
             f"link-building strategy relevant to African web ecosystem."
         )
+
+    def record_winning_campaign(self, campaign_name: str, result: str, approach: str) -> None:
+        """Store a campaign that exceeded targets so KOFI can replicate it."""
+        self.remember_success(approach=f"Campaign: {campaign_name}. {approach}", result=result)
+
+    def learn_market_insight(self, insight: str) -> None:
+        """Store a marketing insight about the African healthcare audience."""
+        self.learn(insight, source="KOFI campaign data")
