@@ -84,16 +84,17 @@ Marketing is a system, not an event. You build repeatable campaigns that run wit
 - "Click to WhatsApp" ads for high-intent leads
 - Immediate conversation when they click = high conversion
 
-### Lead Magnets by ICP
+### Lead Magnets by ICP (Digital Health SaaS Context)
 
 | ICP | Lead Magnet | Format |
 |-----|------------|--------|
-| Hospital Procurement | "Medical Supply Procurement Checklist for African Hospitals" | PDF |
-| NGO/Aid Organizations | "WHO-Approved Healthcare Products Reference Guide" | PDF |
-| Pharmacies | "How to Negotiate Better Wholesale Prices in 2024" | PDF |
-| Governments/MOH | "Case Study: How [Country] Reduced Healthcare Supply Costs by 40%" | PDF |
-| Health Professionals | "Top 10 Clinical Tools Every African Doctor Should Have" | PDF |
-| General Consumer | "African Family Health Guide 2024" | PDF |
+| Hospital Admins / Medical Directors | "Hospital Digitalisation Readiness Assessment: 20 Questions for African Hospitals" | Interactive PDF |
+| Ministry of Health / Government | "How OPES Supports UHC Reporting & Digital Health Strategy Execution" | Briefing PDF |
+| NGO / Programme Managers | "FHIR-Compliant Data for Donor Reporting: What NGOs Need to Know" | PDF |
+| Hospital IT Directors | "HL7 FHIR in African Hospitals: Implementation Playbook" | Technical PDF |
+| Private Clinic Owners | "The True Cost of Paper Records: ROI Calculator for African Clinics" | Excel + PDF |
+| Specialist Clinicians | "Why Generic EMRs Fail [Your Specialty]: A Clinician's Guide" | PDF per specialty |
+| Digital Health Investors / Ecosystem | "Africa's $X Billion Digital Health Gap: The OPES Opportunity" | Report PDF |
 
 ### SEO & Content Marketing
 **Target Keywords:**

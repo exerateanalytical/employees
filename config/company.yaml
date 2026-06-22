@@ -1,241 +1,554 @@
 ##############################################################################
 #  OPES HEALTH SYSTEMS — COMPANY CONFIGURATION
-#  Fill in every [PLACEHOLDER] with your actual information.
-#  All 8 AI employees read this file as their core knowledge base.
+#  Cameroonian digital health company | 22 healthcare software systems
+#  Bilingual EN/FR | HL7 FHIR | CEMAC → Pan-Africa
 ##############################################################################
 
 company:
-  name: "Opes Health Systems"
+  name: "OPES Health Systems"
   website: "https://opeshealthsystems.com"
-  tagline: "[YOUR TAGLINE — e.g. 'Transforming Healthcare Across Africa']"
-  mission: "[YOUR MISSION STATEMENT]"
-  vision: "[YOUR VISION STATEMENT]"
-  founded: "[YEAR FOUNDED]"
-  hq_country: "[COUNTRY — e.g. Cameroon]"
-  hq_city: "[CITY]"
-
+  tagline: "Africa's Most Complete Healthcare Operating System"
+  mission: >
+    To digitise and integrate healthcare delivery across Africa through a unified,
+    interoperable ecosystem of 22 clinical and administrative software systems —
+    making quality healthcare data-driven, accessible, and accountable from triage
+    to billing, in every language and every facility.
+  vision: >
+    A fully connected African healthcare system where every patient has a universal
+    health identity, every clinician has the tools they need, and every Ministry of
+    Health has real-time data to make life-saving decisions.
+  company_type: "Digital Health SaaS"
+  hq_country: "Cameroon"
+  hq_city: "Yaoundé / Douala"
+  founded: "2020s"
+  standard: "HL7 FHIR (Fast Healthcare Interoperability Resources)"
   languages:
     primary: "English"
     secondary: "French"
-    note: "All agents produce bilingual content for pan-African reach."
+    note: >
+      All 22 systems are fully bilingual EN/FR by design — essential for Cameroon
+      (bilingual nation) and the broader CEMAC region (4 Francophone + 2 Anglophone).
 
   contact:
     email: "[CONTACT EMAIL]"
-    phone: "[PHONE / WHATSAPP NUMBER]"
-    whatsapp: "[WHATSAPP BUSINESS NUMBER with country code]"
+    phone: "[PHONE]"
+    whatsapp: "[WHATSAPP BUSINESS NUMBER]"
     linkedin: "[LINKEDIN URL]"
-    facebook: "[FACEBOOK PAGE URL]"
+    facebook: "[FACEBOOK PAGE]"
     instagram: "[INSTAGRAM HANDLE]"
     twitter: "[TWITTER/X HANDLE]"
-    tiktok: "[TIKTOK HANDLE]"
-    youtube: "[YOUTUBE CHANNEL]"
+    website_en: "https://opeshealthsystems.com/en"
+
+  strategic_alignment:
+    - "Cameroon Ministry of Health Digital Health Strategy 2026–2030"
+    - "CEMAC regional health integration agenda"
+    - "African Union Digital Transformation Strategy for Africa"
+    - "WHO Global Digital Health Strategy 2020–2025"
+    - "SDG 3: Good Health and Well-Being"
 
 ##############################################################################
-#  MARKETS — Pan-African focus, CEMAC is home base
+#  MARKETS — Staged expansion strategy
 ##############################################################################
 markets:
-  continental_focus: "Africa (all 54 countries)"
-  priority_regions:
-    - name: "CEMAC (Central Africa)"
-      countries: [Cameroon, Congo-Brazzaville, Gabon, CAR, Chad, Equatorial Guinea]
-      priority: 1
-    - name: "West Africa"
-      countries: [Nigeria, Ghana, Senegal, Côte d'Ivoire, Mali, Burkina Faso, Togo, Benin, Niger, Guinea]
-      priority: 2
-    - name: "East Africa"
-      countries: [Kenya, Tanzania, Ethiopia, Uganda, Rwanda, Burundi, Somalia, Djibouti]
-      priority: 3
-    - name: "Southern Africa"
-      countries: [South Africa, Zimbabwe, Zambia, Mozambique, Angola, Botswana, Namibia]
-      priority: 4
-    - name: "North Africa"
-      countries: [Egypt, Morocco, Algeria, Tunisia, Libya]
-      priority: 5
+  continental_focus: "Africa (all 54 countries — long-term vision)"
+  expansion_stages:
+    stage_1:
+      name: "Home Market"
+      scope: "Cameroon"
+      status: "Active"
+      rationale: >
+        Bilingual nation, aligned with national MoH Digital Health Strategy 2026-2030.
+        Primary proof-of-concept and reference market.
+    stage_2:
+      name: "CEMAC Region"
+      countries: [Cameroon, Congo-Brazzaville, Gabon, Central African Republic, Chad, Equatorial Guinea]
+      status: "Expansion"
+      rationale: >
+        Shared regulatory frameworks, French-speaking majority, CEMAC economic union,
+        and strong political will for regional health integration.
+    stage_3:
+      name: "Pan-Africa"
+      scope: "All 54 African countries"
+      status: "Vision"
+      note: "OPES serves ALL of Africa — not just CEMAC."
 
-  market_notes: >
-    Africa has 1.4 billion people, rapidly growing middle class, increasing
-    health awareness, mobile-first digital adoption, and massive underserved
-    healthcare markets. 70%+ of health expenditure is out-of-pocket.
-    Key decision-makers include Ministry of Health officials, hospital
-    procurement managers, pharmacists, and individual consumers.
+  market_context: >
+    Africa's healthcare systems are massively underdigitised. Most hospitals still
+    run on paper, siloed spreadsheets, or fragmented legacy software. There is no
+    dominant pan-African digital health OS. OPES is building that layer. The
+    opportunity is enormous: 54 countries, 16,000+ hospitals, 100,000+ clinics,
+    and governments under pressure to modernise healthcare data for UHC reporting,
+    epidemic response, and donor accountability.
 
 ##############################################################################
-#  PRODUCTS & SERVICES — Add/edit as needed
+#  THE 22 PRODUCTS — Complete Software Ecosystem
 ##############################################################################
 products:
+
+  # ── CORE PLATFORM ─────────────────────────────────────────────────────────
+
   - id: "P001"
-    name: "[PRODUCT NAME 1]"
-    category: "[e.g. Medical Devices / Pharmaceuticals / Health Software / Diagnostics]"
-    description: "[Full product description — what it does, how it works]"
+    name: "OPESCare"
+    category: "Core Platform / Interoperability"
+    tagline: "Universal Health ID & Interoperability Layer"
+    description: >
+      The backbone of the entire OPES ecosystem. OPESCare assigns every patient
+      a Universal Health ID that persists across facilities, regions, and countries.
+      It is the interoperability engine connecting all 22 OPES systems via HL7 FHIR,
+      enabling seamless data exchange between hospitals, labs, pharmacies, and
+      government health information systems.
     key_benefits:
-      - "[Benefit 1]"
-      - "[Benefit 2]"
-      - "[Benefit 3]"
-    target_customer: "[Who buys this — hospitals, clinics, individuals, governments]"
-    problem_solved: "[What problem does this solve for the African market]"
-    price_range: "[e.g. $X – $Y or 'Contact for pricing']"
-    certifications: "[e.g. CE Mark, FDA, WHO PQ, NAFDAC, etc.]"
-    available_countries: "All Africa"
+      - "One patient identity across all facilities — no more duplicate records"
+      - "HL7 FHIR compliant — interoperable with any international health system"
+      - "Foundation for Universal Health Coverage tracking and reporting"
+      - "Real-time data sharing between all 22 OPES modules"
+    target_customer: "Ministries of Health, hospital networks, national health authorities"
+    problem_solved: >
+      Patient records fragmented across dozens of facilities with no way to know
+      a patient's full history. OPESCare solves the core identity and interoperability problem.
+    strategic_value: "Without OPESCare, the 22 systems are powerful tools. With it, they become Africa's healthcare OS."
 
   - id: "P002"
-    name: "[PRODUCT NAME 2]"
-    category: "[CATEGORY]"
-    description: "[DESCRIPTION]"
+    name: "OPES EMR"
+    category: "Core Platform / Clinical Records"
+    tagline: "Electronic Medical Records for Clinics & Small Hospitals"
+    description: >
+      A streamlined, affordable Electronic Medical Records system designed for
+      Cameroonian and African clinics, health centres, and small hospitals.
+      Captures patient consultations, medical history, diagnoses, prescriptions,
+      and clinical notes. Bilingual, offline-capable, mobile-friendly.
     key_benefits:
-      - "[Benefit 1]"
-      - "[Benefit 2]"
-    target_customer: "[TARGET]"
-    problem_solved: "[PROBLEM]"
-    price_range: "[PRICE]"
-    certifications: "[CERTS]"
-    available_countries: "All Africa"
+      - "Replace paper records forever — no more lost files"
+      - "Works offline — designed for low-bandwidth African environments"
+      - "Bilingual EN/FR interface — zero translation friction"
+      - "Connects to OPESCare universal patient ID"
+      - "Fast adoption — designed for non-technical clinical staff"
+    target_customer: "Private clinics, health centres, district hospitals, general practitioners"
+    problem_solved: >
+      African clinics losing patient records, duplicate tests, missed follow-ups,
+      and zero clinical data for public health reporting.
 
   - id: "P003"
-    name: "[PRODUCT NAME 3]"
-    category: "[CATEGORY]"
-    description: "[DESCRIPTION]"
+    name: "OPES Hospital HIS"
+    category: "Core Platform / Hospital Management"
+    tagline: "Full Hospital Information System"
+    description: >
+      Enterprise-grade Hospital Information System covering every department:
+      admissions and bed management, ward management, outpatient and inpatient
+      workflows, billing and invoicing, discharge planning, and executive reporting.
+      Built for medium to large hospitals across Africa.
     key_benefits:
-      - "[Benefit 1]"
-      - "[Benefit 2]"
-    target_customer: "[TARGET]"
-    problem_solved: "[PROBLEM]"
-    price_range: "[PRICE]"
-    certifications: "[CERTS]"
-    available_countries: "All Africa"
+      - "End-to-end hospital operations on one platform"
+      - "Real-time bed occupancy and patient flow visibility"
+      - "Integrated billing — from admission to discharge invoice"
+      - "Executive dashboards for hospital leadership"
+      - "Connects all specialist modules (CARDIS, PAEDIS, etc.) in one HIS"
+    target_customer: "Medium to large hospitals, referral hospitals, teaching hospitals, hospital chains"
+    problem_solved: >
+      Hospitals running admissions on spreadsheets, billing on paper, with no
+      visibility across departments. OPES HIS gives hospital management a
+      real-time view of the entire facility.
 
-  # Add more products following the same structure
+  - id: "P004"
+    name: "UHC IS"
+    category: "Core Platform / Government Health Policy"
+    tagline: "Universal Health Coverage Information System"
+    description: >
+      A government-facing system that tracks health coverage metrics aligned with
+      WHO UHC indicators and national health plans. Aggregates data from all OPES
+      deployments to give Ministries of Health real-time national health intelligence.
+    key_benefits:
+      - "Real-time UHC indicator tracking for WHO and donor reporting"
+      - "Aggregated national health data without compromising patient privacy"
+      - "Aligned with Cameroon Digital Health Strategy 2026-2030"
+      - "Supports evidence-based health policy and budget allocation"
+    target_customer: "Ministries of Health, national health agencies, international health organisations (WHO, UNICEF, World Bank)"
+    problem_solved: >
+      African governments unable to report accurate UHC progress because data
+      is siloed in paper records and disconnected systems.
+
+  - id: "P005"
+    name: "OPES Triage"
+    category: "Core Platform / Emergency & Workflow"
+    tagline: "Standalone Triage Management System"
+    description: >
+      A lightweight, standalone triage management system that can integrate
+      with any existing hospital software via FHIR APIs. Digitises patient
+      registration and triage scoring at the point of entry. Works independently
+      without requiring a full OPES deployment.
+    key_benefits:
+      - "Works standalone — no need to replace existing systems"
+      - "Integrates with non-OPES systems via HL7 FHIR"
+      - "Reduces waiting time and triage errors"
+      - "Digital queue management and priority scoring"
+      - "Low-cost entry point into the OPES ecosystem"
+    target_customer: "Any hospital or clinic — even those with existing (non-OPES) software"
+    problem_solved: >
+      Chaotic emergency departments with no structured triage, long wait times,
+      and patients deteriorating while waiting. Also serves as a low-friction
+      entry point to introduce OPES to resistant institutions.
+    strategic_value: "Gateway product — hospitals that adopt Triage naturally expand to other OPES modules."
+
+  # ── DIAGNOSTICS ───────────────────────────────────────────────────────────
+
+  - id: "P006"
+    name: "OPES Lab"
+    category: "Diagnostics"
+    tagline: "Laboratory Information System"
+    description: >
+      Complete Laboratory Information System for clinical laboratories: test
+      orders, sample tracking, result entry, quality control, and report delivery
+      directly to the requesting clinician's EMR or HIS.
+    key_benefits:
+      - "Eliminate paper lab request forms and result slips"
+      - "Sample tracking from collection to result"
+      - "Digital result delivery to clinician in real time"
+      - "QC reporting and turnaround time analytics"
+    target_customer: "Hospital labs, independent diagnostic labs, district health laboratories"
+
+  - id: "P007"
+    name: "PHARMIS"
+    category: "Diagnostics / Pharmacy"
+    tagline: "Pharmacy Information System"
+    description: >
+      Pharmacy management system covering prescription receiving, dispensing,
+      inventory management, drug interaction checking, and reporting.
+      Connects to OPES EMR/HIS for integrated prescribing and dispensing workflow.
+    key_benefits:
+      - "Eliminate prescription errors with digital dispensing"
+      - "Real-time drug inventory with automated low-stock alerts"
+      - "Drug interaction checking at point of dispensing"
+      - "Connected to EMR — prescription arrives before the patient"
+    target_customer: "Hospital pharmacies, clinic pharmacies, standalone pharmacies"
+
+  - id: "P008"
+    name: "RADIS"
+    category: "Diagnostics / Radiology"
+    tagline: "Radiology Information System"
+    description: >
+      Radiology workflow management: radiology order management, imaging
+      scheduling, report generation, and DICOM-compatible image management.
+      Connects radiologist reports directly back to the requesting clinician.
+    key_benefits:
+      - "Digital radiology order and results workflow"
+      - "Scheduling and appointment management"
+      - "Radiologist reporting tools"
+      - "DICOM compatible — works with existing imaging equipment"
+    target_customer: "Radiology departments in hospitals, standalone imaging centres"
+
+  # ── 12 SPECIALIST CLINICAL SYSTEMS ────────────────────────────────────────
+
+  - id: "P009"
+    name: "CARDIS"
+    category: "Specialist — Cardiology"
+    tagline: "Cardiology Information System"
+    description: >
+      Specialist clinical system for cardiology departments. Manages ECG data,
+      cardiac investigations, cardiology consultations, treatment plans, and
+      follow-up scheduling. Integrates with OPES EMR and HIS.
+    target_customer: "Cardiology departments, cardiac units, specialist cardiology centres"
+
+  - id: "P010"
+    name: "DENTIS"
+    category: "Specialist — Dental"
+    tagline: "Dental Information System"
+    description: >
+      Complete dental practice management: patient dental records including
+      tooth charts, treatment plans, appointment booking, X-ray management,
+      and billing. Works standalone or connected to OPES ecosystem.
+    target_customer: "Dental clinics, hospital dental departments, dental chains"
+
+  - id: "P011"
+    name: "DERMIS"
+    category: "Specialist — Dermatology"
+    tagline: "Dermatology Information System"
+    description: >
+      Dermatology-specific clinical records: skin condition documentation with
+      image capture, treatment history, phototherapy scheduling, and
+      dermatology-specific clinical templates.
+    target_customer: "Dermatology departments, specialist dermatology clinics"
+
+  - id: "P012"
+    name: "ENDOIS"
+    category: "Specialist — Endocrinology & Diabetes"
+    tagline: "Endocrinology & Diabetes Information System"
+    description: >
+      Chronic disease management system for endocrinology and diabetes:
+      glucose tracking, HbA1c trends, insulin management, diet and
+      lifestyle monitoring, and complication screening workflows.
+      Critical for Africa's growing diabetes burden.
+    target_customer: "Endocrinology departments, diabetes clinics, chronic disease programmes"
+    strategic_note: >
+      Africa has the fastest-growing diabetes epidemic globally. ENDOIS addresses
+      a massive unmet need in chronic disease data management.
+
+  - id: "P013"
+    name: "GYNOBSIS"
+    category: "Specialist — Obstetrics & Gynaecology"
+    tagline: "Obstetrics & Gynaecology Information System"
+    description: >
+      Complete maternal health system: antenatal care scheduling, obstetric
+      history, delivery records, postnatal follow-up, gynaecological consultations,
+      and integration with national maternal mortality reporting.
+    target_customer: "Maternity units, hospitals, women's health clinics, district health facilities"
+    strategic_note: >
+      Maternal mortality remains Africa's most urgent health crisis. GYNOBSIS
+      directly supports WHO and government maternal health KPIs.
+
+  - id: "P014"
+    name: "MHIS"
+    category: "Specialist — Mental Health"
+    tagline: "Mental Health Information System"
+    description: >
+      Mental health records system: psychiatric assessments, therapy session
+      notes, medication management for mental health conditions, risk assessments,
+      and mental health program monitoring.
+    target_customer: "Psychiatric hospitals, mental health departments, community mental health programmes"
+
+  - id: "P015"
+    name: "NDIS"
+    category: "Specialist — Nutrition & Dietetics"
+    tagline: "Nutrition & Dietetics Information System"
+    description: >
+      Nutrition assessment and management: anthropometric measurements, dietary
+      assessment, nutrition plans, malnutrition screening, and therapeutic
+      feeding programme management. Critical for Africa's nutrition burden.
+    target_customer: "Nutrition programmes, hospitals, NGO-run feeding centres, paediatric wards"
+
+  - id: "P016"
+    name: "OPHIS"
+    category: "Specialist — Ophthalmology"
+    tagline: "Ophthalmology Information System"
+    description: >
+      Eye care information system: visual acuity records, ophthalmic examination
+      templates, surgical scheduling for cataract and other procedures,
+      spectacle prescriptions, and eye health programme management.
+    target_customer: "Eye departments, ophthalmology clinics, vision centres, eye care NGOs"
+
+  - id: "P017"
+    name: "ORTHOIS"
+    category: "Specialist — Orthotics & Prosthetics"
+    tagline: "Orthotics & Prosthetics Information System"
+    description: >
+      Specialist system for orthotics and prosthetics services: patient assessment,
+      device prescription, fabrication tracking, fitting appointments, and
+      long-term follow-up management.
+    target_customer: "Rehabilitation centres, orthopaedic departments, prosthetics workshops"
+
+  - id: "P018"
+    name: "PAEDIS"
+    category: "Specialist — Paediatrics"
+    tagline: "Paediatrics Information System"
+    description: >
+      Child health system: growth monitoring with WHO growth charts, vaccination
+      schedules, paediatric consultation templates, neonatal records, and
+      child health programme monitoring including EPI tracking.
+    target_customer: "Paediatric wards, children's hospitals, child health clinics, district health facilities"
+
+  - id: "P019"
+    name: "REHABIS"
+    category: "Specialist — Rehabilitation"
+    tagline: "Physical Medicine & Rehabilitation Information System"
+    description: >
+      Rehabilitation management: physiotherapy session records, rehabilitation
+      goals and progress tracking, functional assessment tools, and
+      multidisciplinary team coordination.
+    target_customer: "Rehabilitation departments, physiotherapy centres, hospitals"
+
+  - id: "P020"
+    name: "SLTIS"
+    category: "Specialist — Speech & Language Therapy"
+    tagline: "Speech & Language Therapy Information System"
+    description: >
+      Speech therapy records system: communication assessments, therapy goals,
+      session notes, progress tracking, and dysphagia management protocols.
+    target_customer: "Speech therapy departments, neurology units, paediatric services"
+
+  # ── ADMINISTRATION & FINANCE ──────────────────────────────────────────────
+
+  - id: "P021"
+    name: "OPES CDMS"
+    category: "Administration & Finance"
+    tagline: "Clinical Document Management System"
+    description: >
+      Secure digital document management for clinical environments: scan and
+      digitise paper records, manage consent forms, discharge summaries,
+      referral letters, lab reports, and all clinical documentation with
+      audit trails and access controls.
+    target_customer: "All hospitals and clinics — especially those transitioning from paper"
+
+  - id: "P022"
+    name: "RCMIS"
+    category: "Administration & Finance"
+    tagline: "Revenue Cycle Management Information System"
+    description: >
+      End-to-end revenue cycle management: patient billing, insurance claims
+      management, payment tracking, debt management, financial reporting,
+      and accounts receivable. Supports cash, insurance, NHIS/CNAM (national
+      health insurance), and NGO billing models.
+    key_benefits:
+      - "Track every franc from patient registration to payment"
+      - "Insurance claims management (CNAM, private insurers)"
+      - "Reduce revenue leakage and unpaid bills"
+      - "Financial dashboards for hospital CFOs"
+    target_customer: "Hospital finance departments, clinic administrators, health system CFOs"
 
 ##############################################################################
-#  IDEAL CUSTOMER PROFILES (ICPs) — Based on $100M Leads framework
+#  IDEAL CUSTOMER PROFILES (ICPs)
 ##############################################################################
 ideal_customers:
-  b2b:
-    - segment: "Hospitals & Clinics"
-      description: "Public and private hospitals, polyclinics, specialist centers"
-      decision_maker: "Procurement Director, Medical Director, Hospital Administrator"
+  tier_1_government:
+    - segment: "Ministries of Health"
+      countries: "Cameroon (primary), then all CEMAC, then all Africa"
+      decision_maker: "Secretary General, Director of Health Informatics, Chief Medical Officer"
+      use_case: "UHC IS, OPESCare (national health ID), population health reporting"
       pain_points:
-        - "Inconsistent supply of quality medical products"
-        - "High import costs and delays"
-        - "Lack of reliable African suppliers"
-        - "Regulatory compliance complexity"
-      desired_outcome: "Reliable supply chain, quality products, competitive pricing, local support"
-      budget_signal: "Purchasing manager with authority over XAF/USD budgets"
+        - "No national health data infrastructure for WHO/donor reporting"
+        - "Paper-based systems make epidemic response slow and inaccurate"
+        - "Multiple donors, multiple vertical systems — no integration"
+      desired_outcome: "Unified national health data, UHC progress reporting, digital health strategy execution"
+      deal_size: "Large — national contracts, multi-year, donor-funded"
 
-    - segment: "Government & Ministries of Health"
-      description: "National MOH, district health offices, public health agencies"
-      decision_maker: "Procurement officer, Director of Pharmacy, Minister/Deputy"
+  tier_2_hospitals:
+    - segment: "Teaching & Referral Hospitals"
+      examples: "Yaoundé Central Hospital, Douala General Hospital, and equivalents across CEMAC"
+      decision_maker: "Medical Director, Hospital Administrator, IT Director"
+      use_case: "Full stack: OPES HIS + EMR + all relevant specialist modules"
       pain_points:
-        - "Budget constraints limiting healthcare access"
-        - "Need for bulk supply and reliability"
-        - "Regulatory and documentation requirements"
-      desired_outcome: "Cost-effective solutions that serve the population at scale"
+        - "Departments run different disconnected software (or paper)"
+        - "No patient continuity across departments"
+        - "Billing leakage and untracked revenue"
+      desired_outcome: "One integrated hospital platform, real-time patient flow, accurate billing"
+      deal_size: "Mid-large — full system deployment, training, support"
 
-    - segment: "NGOs & International Health Organizations"
-      description: "WHO, UNICEF, MSF, local NGOs running health programs"
-      decision_maker: "Country Director, Supply Chain Manager, Program Officer"
+    - segment: "Private Hospitals & Clinics"
+      decision_maker: "Owner, Medical Director, Practice Manager"
+      use_case: "OPES EMR or HIS + PHARMIS + RCMIS"
       pain_points:
-        - "Need for WHO/FDA-approved products"
-        - "Local presence and support"
-        - "Documentation for grant reporting"
-      desired_outcome: "Trusted African partner with international certifications"
+        - "Losing patients to better-organised competitors"
+        - "Paper records causing errors and liability"
+        - "No visibility into revenue and cash flow"
+      desired_outcome: "Professional digital operations, better patient experience, financial control"
+      deal_size: "Small-mid — faster sales cycle, lower price point"
 
-    - segment: "Pharmacies & Distributors"
-      description: "Retail pharmacies, wholesale distributors, pharmacy chains"
-      decision_maker: "Owner/Pharmacist, Purchasing Manager"
+  tier_3_programmes:
+    - segment: "NGOs & International Health Programmes"
+      examples: "MSF, UNICEF, PIH, FHI360, USAID-funded programmes"
+      decision_maker: "Country Director, M&E Officer, Health Informatics Advisor"
+      use_case: "NDIS, PAEDIS, GYNOBSIS, MHIS — vertical programme management"
       pain_points:
-        - "Product availability and consistency"
-        - "Competitive wholesale pricing"
-        - "Fast delivery and local support"
-      desired_outcome: "Reliable wholesale partner with good margins and fast delivery"
+        - "Donor reporting requires granular patient-level data"
+        - "Programme data is in Excel sheets, not structured systems"
+        - "No visibility on programme outcomes"
+      desired_outcome: "FHIR-compliant data, donor reporting automation, programme outcome tracking"
+      deal_size: "Project-based — tied to donor funding cycles"
 
-  b2c:
-    - segment: "Healthcare Professionals"
-      description: "Doctors, nurses, midwives, lab technicians"
+  tier_4_specialists:
+    - segment: "Specialist Clinics & Centres"
+      examples: "Eye clinics, dental chains, diabetes centres, maternal health clinics"
+      decision_maker: "Clinic owner, Lead clinician"
+      use_case: "Vertical specialist system (OPHIS, DENTIS, ENDOIS, GYNOBSIS etc.)"
       pain_points:
-        - "Need trusted, quality healthcare tools"
-        - "Limited access to latest medical innovations"
-      desired_outcome: "Professional-grade products at fair prices with local support"
-
-    - segment: "Health-Conscious Consumers"
-      description: "Urban middle-class Africans investing in their health"
-      pain_points:
-        - "Can't always trust product quality in local markets"
-        - "Limited access to modern health products"
-      desired_outcome: "Certified, effective health products delivered to their door"
+        - "No system built for their specific specialty in Africa"
+        - "Generic EMRs don't understand their clinical workflows"
+      desired_outcome: "Purpose-built tool that fits their clinical workflow perfectly"
+      deal_size: "Small — but high volume potential across 12 specialties"
 
 ##############################################################################
-#  GRAND SLAM OFFER FRAMEWORK — Alex Hormozi $100M Offers
+#  GRAND SLAM OFFER FRAMEWORK (Alex Hormozi)
 ##############################################################################
 offer_framework:
-  core_promise: "[What is the #1 result you deliver? e.g. 'Certified medical supplies delivered anywhere in Africa within 72 hours']"
-  dream_outcome: "[Client's dream outcome — e.g. 'Never run out of critical medical supplies again']"
+  core_promise: >
+    Africa's only integrated ecosystem of 22 healthcare software systems —
+    bilingual, FHIR-compliant, built specifically for African clinical realities.
+  dream_outcome: >
+    A fully digital hospital or health system where clinicians spend time
+    caring for patients instead of managing paper, and administrators have
+    real-time data to make every decision confidently.
   likelihood_boosters:
-    - "WHO/FDA certified products"
-    - "Money-back guarantee on defective goods"
-    - "Proven track record across [X] countries"
-    - "Local support teams in [X] countries"
+    - "HL7 FHIR international standard — not a proprietary lock-in"
+    - "Built by a Cameroonian team that understands African healthcare"
+    - "Bilingual EN/FR — zero language barrier"
+    - "Aligned with Cameroon MoH Digital Health Strategy 2026-2030"
+    - "Modular — start with one system, expand at your own pace"
   time_delay_reducers:
-    - "48-72 hour delivery to major cities"
-    - "Ready stock in regional warehouses"
-    - "Online ordering with instant confirmation"
+    - "OPES Triage can be deployed in days — not months"
+    - "Cloud deployment option — no hardware procurement needed"
+    - "Training included — staff ready to use within weeks"
   effort_reducers:
-    - "Single supplier for multiple product categories"
-    - "Dedicated account manager"
-    - "Regulatory documentation handled for you"
+    - "One vendor covers 22 specialties — not 22 vendors to manage"
+    - "One patient ID across all systems — no re-registration"
+    - "Dedicated implementation team handles setup"
   risk_reversals:
-    - "30-day quality guarantee"
-    - "Free product samples for qualified buyers"
-    - "No minimum order requirement for first purchase"
+    - "Start with a pilot (e.g. Triage or EMR) before full deployment"
+    - "Modular adoption — zero obligation to buy all 22 at once"
+    - "FHIR compliance ensures you're never locked in"
 
 ##############################################################################
-#  BRAND VOICE & MESSAGING
+#  COMPETITIVE LANDSCAPE
+##############################################################################
+competition:
+  context: >
+    Most competition comes from generic international HIS vendors (often not
+    built for Africa), vertical point solutions, and the biggest competitor of
+    all: paper + Excel. OPES's advantage is being the only pan-African, bilingual,
+    FHIR-native, 22-system integrated ecosystem built specifically for this market.
+  key_differentiators:
+    - "Only 22-system integrated ecosystem in Africa"
+    - "Built in Africa, for Africa — understands local clinical realities"
+    - "Bilingual EN/FR native — not an afterthought"
+    - "HL7 FHIR from day one — internationally interoperable"
+    - "OPESCare universal health ID — no competitor has this"
+    - "Modular + integrated — compete as specialist AND as full HIS"
+    - "MoH-aligned — in Cameroon national digital health strategy"
+  competitors_to_monitor:
+    - "Baobab Health (Malawi)"
+    - "Ilara Health"
+    - "mPharma"
+    - "Vezeeta"
+    - "ChiefHealth"
+    - "OpenMRS (open source)"
+    - "DHIS2 (open source — government reporting)"
+    - "International vendors: Cerner, Epic (too expensive/non-African)"
+
+##############################################################################
+#  BRAND VOICE
 ##############################################################################
 brand:
-  voice: "Professional yet warm. Confident but never arrogant. Pan-African pride."
-  tone_keywords: [trustworthy, innovative, accessible, empowering, expert, African]
-  avoid: [overly clinical jargon, unverifiable medical claims, Western-centric language]
+  voice: >
+    Visionary but grounded. The confidence of a company solving a continental
+    problem, with the warmth of a team that grew up in African healthcare.
+    Technical enough for IT directors. Clear enough for clinicians.
+    Bold enough for Ministers.
+  tone_keywords: [innovative, pan-African, trustworthy, integrated, bilingual, expert, transformative]
   key_messages:
-    - "Quality healthcare solutions built for Africa, by people who understand Africa"
-    - "Your reliable partner in building a healthier Africa"
-    - "[ADD YOUR KEY MESSAGES]"
-
-##############################################################################
-#  COMPETITORS (ATLAS will expand this through research)
-##############################################################################
-competitors:
-  known:
-    - name: "[Competitor 1]"
-      website: "[URL]"
-      strengths: "[Their strengths]"
-      weaknesses: "[Their weaknesses / our advantage]"
-    - name: "[Competitor 2]"
-      website: "[URL]"
-      strengths: "[Their strengths]"
-      weaknesses: "[Their weaknesses / our advantage]"
-  monitoring_keywords:
-    - "medical supplies Africa"
-    - "healthcare products CEMAC"
-    - "pharmaceutical distributor Africa"
-    - "[YOUR PRODUCT CATEGORY] Africa"
+    - "Africa's most complete healthcare operating system — 22 systems, one ecosystem"
+    - "Built in Cameroon. Built for Africa. Built on global standards."
+    - "One patient ID. Every department. Every country."
+    - "From triage to billing, in English and French."
+  avoid:
+    - "Overpromising implementation timelines"
+    - "Western-centric healthcare assumptions"
+    - "Technical jargon without explanation"
 
 ##############################################################################
 #  SOCIAL MEDIA STRATEGY
 ##############################################################################
 social_media:
-  posting_frequency:
-    facebook: "2x daily"
-    instagram: "1x daily + 3 stories"
-    linkedin: "1x daily"
-    twitter_x: "3x daily"
-    tiktok: "1x daily"
-    whatsapp_broadcast: "2x weekly"
+  primary_audiences:
+    - "Hospital administrators and medical directors (LinkedIn)"
+    - "Healthcare IT professionals and health informatics teams (LinkedIn, Twitter)"
+    - "Ministry of Health officials and digital health policymakers (LinkedIn)"
+    - "Clinicians and healthcare professionals (Facebook, WhatsApp)"
+    - "NGO and development sector health professionals (LinkedIn, Twitter)"
+    - "African health tech investors and ecosystem players (LinkedIn, Twitter)"
   content_pillars:
-    - "Product education (30%)"
-    - "Health tips for African audiences (25%)"
-    - "Customer success stories (20%)"
-    - "Company culture & behind-scenes (10%)"
-    - "Industry news & thought leadership (15%)"
-  hashtag_strategy:
-    branded: ["#OpesHealth", "#HealthcareAfrica", "[ADD YOUR BRANDED HASHTAGS]"]
-    industry: ["#AfricaHealth", "#HealthAfrica", "#MedicalAfrica", "#SanteAfrique"]
-    regional: ["#CEMAC", "#WestAfrica", "#EastAfrica", "#AfricaRising"]
+    - "Product education — what each of the 22 systems does (30%)"
+    - "African digital health news and policy (20%)"
+    - "OPES customer stories and deployment updates (20%)"
+    - "Clinical thought leadership — why digitisation saves lives (15%)"
+    - "Team and culture — proudly Cameroonian, building for Africa (15%)"
+  hashtags:
+    branded: ["#OPESHealth", "#OPESCare", "#HealthcareOS", "#DigitalHealthAfrica"]
+    industry: ["#DigitalHealth", "#HealthIT", "#eHealth", "#mHealth", "#HL7FHIR", "#UHC"]
+    regional: ["#AfricaHealth", "#CMR", "#CEMAC", "#CamerounNumerique", "#SanteNumerique"]

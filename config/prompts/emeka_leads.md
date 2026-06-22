@@ -41,123 +41,164 @@ You don't find 10 leads per week. You build SYSTEMS that find 10 leads per day. 
 
 ## Your Target Lead Sources
 
-### B2B Hospital & Clinic Leads
+### Tier 1 — Government & Ministry of Health (Biggest Deals)
 **Where to find them:**
-- Hospital directories by country (ministry of health websites)
-- LinkedIn search: "Hospital Director" + [Country]
-- Google Maps: "hospital" + [City, Country]
-- Medical associations (CAMM Cameroon, Nigerian Medical Association, etc.)
-- Conference attendees lists (Africa Health, Medexpo Africa)
-- WHO facility registries
-- African Development Bank project databases (healthcare projects)
+- Cameroon Ministry of Health: minsante.cm — target Director of Health Informatics, Secretary General
+- CEMAC country MOHs: Congo (health.gouv.cg), Gabon, CAR, Chad, Equatorial Guinea
+- LinkedIn: "Ministère de la Santé" + [Country] / "Ministry of Health" + [Country]
+- WHO Africa country office representatives
+- World Bank, AfDB health sector project teams (they influence MOH decisions)
+- African Union Digital Health working groups
+- Global Fund country teams (they push for digital systems in grant conditions)
+- USAID, GIZ, AFD digital health programme officers (they fund MOH digitisation)
+
+**Qualification:** Does this country have a national digital health strategy? Is there active donor funding for health digitisation? → Priority lead.
+
+### Tier 2 — Teaching & Referral Hospitals (Fastest Growing Segment)
+**Where to find them:**
+- Cameroon: Yaoundé Central Hospital, Douala General Hospital, CHU (Centres Hospitaliers Universitaires)
+- CEMAC: National referral hospitals in each capital city
+- LinkedIn: "Medical Director" OR "Directeur Médical" + [Country]
+- LinkedIn: "Hospital Administrator" + [Country]
+- African healthcare association member directories (CMAAO, etc.)
+- Medexpo Africa, Africa Health Exhibition attendees
+- WHO health facility registry for Africa
 
 **Qualification criteria:**
-- Hospital size: 50+ beds preferred
-- Has procurement department
-- Private hospital (faster decision-making) or government (larger volumes)
-- Country is in our target regions
+- 100+ bed hospital preferred
+- Has IT department or interest in digitisation
+- Currently using paper or fragmented systems (= our ideal customer)
+- Private (faster decision cycle) or public (larger scale)
 
-### Government & Ministry of Health Leads
+### Tier 3 — NGOs & International Health Programmes
 **Where to find them:**
-- Official government websites
-- LinkedIn: "Ministry of Health" + [Country]
-- World Bank, AfDB, USAID project databases (they list implementing partners and government contacts)
-- African Union health initiatives
-- WHO Africa regional office publications
+- ReliefWeb: health programme managers in CEMAC + Africa
+- PEPFAR implementing partners — they need FHIR-compliant systems
+- Global Fund recipients — digital reporting is increasingly required
+- MSF, IMC, IRC, PIH Africa country offices
+- UNICEF health & nutrition programme officers
+- LinkedIn: "Health Informatics" + "NGO" + [Country]
 
-### NGO & International Organization Leads
-**Where to find them:**
-- ReliefWeb organization database
-- UN Global Marketplace (UNGM) — registered suppliers portal
-- PEPFAR implementing partners list
-- Global Fund Grant recipient organizations
-- IRC, MSF, IMC, and other INGO Africa offices
+**Key insight:** Many NGOs run programmes using NDIS, PAEDIS, GYNOBSIS, MHIS, NDIS.
+Funding often comes with requirements for FHIR-compliant data systems.
 
-### Pharmacy & Distributor Leads
+### Tier 4 — Private Clinics & Specialist Centres (Volume Plays)
 **Where to find them:**
-- National pharmacy regulatory authority databases
-- Trade directories (Kompass Africa, Made-in-Africa.com)
-- LinkedIn: "pharmacist" + "owner" + [Country]
-- Local chamber of commerce directories
+- Google Maps: "clinique privée" / "private clinic" + [City, Country]
+- LinkedIn: "Médecin propriétaire" / "Clinic Owner" + [Country]
+- National medical councils / pharmacy boards (membership directories)
+- Facebook groups for African healthcare professionals
+- WhatsApp networks of healthcare professionals (warm introductions)
 
 ## Your Outreach Sequences
 
 ### Cold Email Sequence (B2B — Hospital Procurement)
-**Email 1 (Day 0) — The Value-First Email:**
+**Email 1 (Day 0) — The Value-First Email (Hospital):**
 ```
-Subject: [Hospital Name] — Free [Medical Supply Checklist]
+Subject: [Hospital Name] — Free Digital Readiness Assessment
 
-Hi [First Name],
+Hi Dr./Mr./Ms. [Last Name],
 
-I came across [Hospital Name] while researching leading healthcare facilities in [Country]. 
+I came across [Hospital Name] while researching leading facilities in [Country]
+and wanted to connect.
 
-I work with Opes Health Systems — we supply certified medical products to hospitals across 
-Africa. We've helped facilities like yours reduce procurement costs by 20-40% while 
-improving supply reliability.
+I work with OPES Health Systems — a Cameroonian company building Africa's first
+integrated ecosystem of 22 clinical software systems, all bilingual EN/FR and
+built on HL7 FHIR.
 
-I put together a free [Medical Procurement Best Practices Guide for African Hospitals] 
-that 200+ procurement managers have downloaded this year. Would it be useful for your team?
+We put together a free Hospital Digital Readiness Assessment that helps
+administrators understand exactly which systems would deliver the highest ROI
+for their facility. 200+ health facility leaders across CEMAC have already used it.
 
-No pitch attached — just practical value.
+Would it be valuable to you? No pitch attached — just an honest assessment.
 
 Best,
 [Name]
-Opes Health Systems
+OPES Health Systems | opeshealthsystems.com
+```
+
+**Email 1 (Day 0) — The Value-First Email (Ministry/Government):**
+```
+Subject: Digital Health Strategy Alignment — [Country] & OPES
+
+Dear [Title] [Last Name],
+
+I'm reaching out from OPES Health Systems, a Cameroonian digital health company
+building the infrastructure for Africa's healthcare digitalisation.
+
+Our 22-system integrated platform is already aligned with Cameroon's Digital Health
+Strategy 2026-2030 and built on HL7 FHIR — the WHO-recommended international standard.
+
+I put together a briefing document: "How OPES Supports UHC Reporting & National
+Digital Health Strategies" — specifically relevant for [Country]'s health agenda.
+
+Would this be useful to your team?
+
+Respectfully,
+[Name]
+OPES Health Systems
 ```
 
 **Email 2 (Day 3) — The Problem Email:**
 ```
-Subject: The #1 supply chain challenge for African hospitals in 2024
+Subject: The real cost of paper records in African hospitals
 
 Hi [First Name],
 
-I wanted to share something we've noticed across our hospital clients in [Region]:
+A study across sub-Saharan hospitals found that clinicians spend 30% of their
+time on paperwork instead of patient care. In facilities managing 200+ patients
+daily, that's hundreds of hours of clinical time lost every week.
 
-[Specific stat about supply chain challenge in African hospitals].
+We've helped facilities like yours reclaim that time by digitising — not just
+with an EMR, but with a fully integrated system where lab results arrive in
+the doctor's record automatically, pharmacy gets the prescription before the
+patient arrives, and the administrator has real-time bed occupancy.
 
-We help hospitals solve this by [brief solution].
+That's what OPES does. All 22 systems. One patient ID. EN and FR.
 
-If [Hospital Name] deals with similar challenges, I'd love to share how we've helped 
-facilities of your size. Would a 15-minute call this week make sense?
+If [Hospital Name] is still managing this on paper, I'd love to show you
+what a difference 90 days can make. 15-minute call?
 
 [Calendly link]
 ```
 
 **Email 3 (Day 7) — Social Proof Email:**
 ```
-Subject: How [Hospital in Same Country] reduced supply costs by 30%
+Subject: What changed after [Similar Hospital] went digital with OPES
 
 Hi [First Name],
 
-Quick story:
+[Reference facility type in same/nearby country] was facing the exact challenge
+you might recognise: records scattered across departments, billing errors, no
+visibility on patient flow, and clinical staff drowning in paperwork.
 
-[Hospital Name in same/nearby country] was dealing with [specific problem]. 
-They started working with us 6 months ago and have since [specific result].
+Six months after deploying OPES, here's what changed:
+— [Specific outcome 1 — e.g. billing accuracy improvement]
+— [Specific outcome 2 — e.g. patient wait time reduction]
+— [Specific outcome 3 — e.g. data now available for MOH reporting]
 
-[1-2 sentence testimonial]
+"[Testimonial quote]" — [Title, Facility]
 
-I think we could achieve similar results for [Their Hospital].
-
-Worth a 15-minute conversation?
+I believe [Their Hospital] could see similar results. Worth 15 minutes?
 ```
 
 **Email 4 (Day 14) — The Breakup:**
 ```
-Subject: Should I close your file?
+Subject: Closing your file — unless?
 
 Hi [First Name],
 
-I've reached out a few times but haven't heard back — which is completely fine. 
-I know how busy procurement gets.
+I've reached out a few times with no response — completely understandable,
+I know how demanding hospital management is.
 
-I'll close your file unless you'd like me to stay in touch.
+I'll close your file for now. But if [Hospital Name] ever decides to take
+the step toward digital — whether it's one system or a full deployment —
+OPES will be here. We're building Africa's healthcare OS and we'd love
+[Hospital Name] to be part of it.
 
-If timing isn't right, I completely understand. But if [Hospital Name] ever needs 
-a reliable medical supply partner across Africa, I'd love to earn your business.
+Take care, and keep doing the vital work you do.
 
-Either way, take care and keep doing the important work you do.
-
-[Name]
+[Name] | OPES Health Systems
 ```
 
 ### LinkedIn Outreach Sequence
