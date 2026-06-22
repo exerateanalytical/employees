@@ -1,0 +1,241 @@
+##############################################################################
+#  OPES HEALTH SYSTEMS — COMPANY CONFIGURATION
+#  Fill in every [PLACEHOLDER] with your actual information.
+#  All 8 AI employees read this file as their core knowledge base.
+##############################################################################
+
+company:
+  name: "Opes Health Systems"
+  website: "https://opeshealthsystems.com"
+  tagline: "[YOUR TAGLINE — e.g. 'Transforming Healthcare Across Africa']"
+  mission: "[YOUR MISSION STATEMENT]"
+  vision: "[YOUR VISION STATEMENT]"
+  founded: "[YEAR FOUNDED]"
+  hq_country: "[COUNTRY — e.g. Cameroon]"
+  hq_city: "[CITY]"
+
+  languages:
+    primary: "English"
+    secondary: "French"
+    note: "All agents produce bilingual content for pan-African reach."
+
+  contact:
+    email: "[CONTACT EMAIL]"
+    phone: "[PHONE / WHATSAPP NUMBER]"
+    whatsapp: "[WHATSAPP BUSINESS NUMBER with country code]"
+    linkedin: "[LINKEDIN URL]"
+    facebook: "[FACEBOOK PAGE URL]"
+    instagram: "[INSTAGRAM HANDLE]"
+    twitter: "[TWITTER/X HANDLE]"
+    tiktok: "[TIKTOK HANDLE]"
+    youtube: "[YOUTUBE CHANNEL]"
+
+##############################################################################
+#  MARKETS — Pan-African focus, CEMAC is home base
+##############################################################################
+markets:
+  continental_focus: "Africa (all 54 countries)"
+  priority_regions:
+    - name: "CEMAC (Central Africa)"
+      countries: [Cameroon, Congo-Brazzaville, Gabon, CAR, Chad, Equatorial Guinea]
+      priority: 1
+    - name: "West Africa"
+      countries: [Nigeria, Ghana, Senegal, Côte d'Ivoire, Mali, Burkina Faso, Togo, Benin, Niger, Guinea]
+      priority: 2
+    - name: "East Africa"
+      countries: [Kenya, Tanzania, Ethiopia, Uganda, Rwanda, Burundi, Somalia, Djibouti]
+      priority: 3
+    - name: "Southern Africa"
+      countries: [South Africa, Zimbabwe, Zambia, Mozambique, Angola, Botswana, Namibia]
+      priority: 4
+    - name: "North Africa"
+      countries: [Egypt, Morocco, Algeria, Tunisia, Libya]
+      priority: 5
+
+  market_notes: >
+    Africa has 1.4 billion people, rapidly growing middle class, increasing
+    health awareness, mobile-first digital adoption, and massive underserved
+    healthcare markets. 70%+ of health expenditure is out-of-pocket.
+    Key decision-makers include Ministry of Health officials, hospital
+    procurement managers, pharmacists, and individual consumers.
+
+##############################################################################
+#  PRODUCTS & SERVICES — Add/edit as needed
+##############################################################################
+products:
+  - id: "P001"
+    name: "[PRODUCT NAME 1]"
+    category: "[e.g. Medical Devices / Pharmaceuticals / Health Software / Diagnostics]"
+    description: "[Full product description — what it does, how it works]"
+    key_benefits:
+      - "[Benefit 1]"
+      - "[Benefit 2]"
+      - "[Benefit 3]"
+    target_customer: "[Who buys this — hospitals, clinics, individuals, governments]"
+    problem_solved: "[What problem does this solve for the African market]"
+    price_range: "[e.g. $X – $Y or 'Contact for pricing']"
+    certifications: "[e.g. CE Mark, FDA, WHO PQ, NAFDAC, etc.]"
+    available_countries: "All Africa"
+
+  - id: "P002"
+    name: "[PRODUCT NAME 2]"
+    category: "[CATEGORY]"
+    description: "[DESCRIPTION]"
+    key_benefits:
+      - "[Benefit 1]"
+      - "[Benefit 2]"
+    target_customer: "[TARGET]"
+    problem_solved: "[PROBLEM]"
+    price_range: "[PRICE]"
+    certifications: "[CERTS]"
+    available_countries: "All Africa"
+
+  - id: "P003"
+    name: "[PRODUCT NAME 3]"
+    category: "[CATEGORY]"
+    description: "[DESCRIPTION]"
+    key_benefits:
+      - "[Benefit 1]"
+      - "[Benefit 2]"
+    target_customer: "[TARGET]"
+    problem_solved: "[PROBLEM]"
+    price_range: "[PRICE]"
+    certifications: "[CERTS]"
+    available_countries: "All Africa"
+
+  # Add more products following the same structure
+
+##############################################################################
+#  IDEAL CUSTOMER PROFILES (ICPs) — Based on $100M Leads framework
+##############################################################################
+ideal_customers:
+  b2b:
+    - segment: "Hospitals & Clinics"
+      description: "Public and private hospitals, polyclinics, specialist centers"
+      decision_maker: "Procurement Director, Medical Director, Hospital Administrator"
+      pain_points:
+        - "Inconsistent supply of quality medical products"
+        - "High import costs and delays"
+        - "Lack of reliable African suppliers"
+        - "Regulatory compliance complexity"
+      desired_outcome: "Reliable supply chain, quality products, competitive pricing, local support"
+      budget_signal: "Purchasing manager with authority over XAF/USD budgets"
+
+    - segment: "Government & Ministries of Health"
+      description: "National MOH, district health offices, public health agencies"
+      decision_maker: "Procurement officer, Director of Pharmacy, Minister/Deputy"
+      pain_points:
+        - "Budget constraints limiting healthcare access"
+        - "Need for bulk supply and reliability"
+        - "Regulatory and documentation requirements"
+      desired_outcome: "Cost-effective solutions that serve the population at scale"
+
+    - segment: "NGOs & International Health Organizations"
+      description: "WHO, UNICEF, MSF, local NGOs running health programs"
+      decision_maker: "Country Director, Supply Chain Manager, Program Officer"
+      pain_points:
+        - "Need for WHO/FDA-approved products"
+        - "Local presence and support"
+        - "Documentation for grant reporting"
+      desired_outcome: "Trusted African partner with international certifications"
+
+    - segment: "Pharmacies & Distributors"
+      description: "Retail pharmacies, wholesale distributors, pharmacy chains"
+      decision_maker: "Owner/Pharmacist, Purchasing Manager"
+      pain_points:
+        - "Product availability and consistency"
+        - "Competitive wholesale pricing"
+        - "Fast delivery and local support"
+      desired_outcome: "Reliable wholesale partner with good margins and fast delivery"
+
+  b2c:
+    - segment: "Healthcare Professionals"
+      description: "Doctors, nurses, midwives, lab technicians"
+      pain_points:
+        - "Need trusted, quality healthcare tools"
+        - "Limited access to latest medical innovations"
+      desired_outcome: "Professional-grade products at fair prices with local support"
+
+    - segment: "Health-Conscious Consumers"
+      description: "Urban middle-class Africans investing in their health"
+      pain_points:
+        - "Can't always trust product quality in local markets"
+        - "Limited access to modern health products"
+      desired_outcome: "Certified, effective health products delivered to their door"
+
+##############################################################################
+#  GRAND SLAM OFFER FRAMEWORK — Alex Hormozi $100M Offers
+##############################################################################
+offer_framework:
+  core_promise: "[What is the #1 result you deliver? e.g. 'Certified medical supplies delivered anywhere in Africa within 72 hours']"
+  dream_outcome: "[Client's dream outcome — e.g. 'Never run out of critical medical supplies again']"
+  likelihood_boosters:
+    - "WHO/FDA certified products"
+    - "Money-back guarantee on defective goods"
+    - "Proven track record across [X] countries"
+    - "Local support teams in [X] countries"
+  time_delay_reducers:
+    - "48-72 hour delivery to major cities"
+    - "Ready stock in regional warehouses"
+    - "Online ordering with instant confirmation"
+  effort_reducers:
+    - "Single supplier for multiple product categories"
+    - "Dedicated account manager"
+    - "Regulatory documentation handled for you"
+  risk_reversals:
+    - "30-day quality guarantee"
+    - "Free product samples for qualified buyers"
+    - "No minimum order requirement for first purchase"
+
+##############################################################################
+#  BRAND VOICE & MESSAGING
+##############################################################################
+brand:
+  voice: "Professional yet warm. Confident but never arrogant. Pan-African pride."
+  tone_keywords: [trustworthy, innovative, accessible, empowering, expert, African]
+  avoid: [overly clinical jargon, unverifiable medical claims, Western-centric language]
+  key_messages:
+    - "Quality healthcare solutions built for Africa, by people who understand Africa"
+    - "Your reliable partner in building a healthier Africa"
+    - "[ADD YOUR KEY MESSAGES]"
+
+##############################################################################
+#  COMPETITORS (ATLAS will expand this through research)
+##############################################################################
+competitors:
+  known:
+    - name: "[Competitor 1]"
+      website: "[URL]"
+      strengths: "[Their strengths]"
+      weaknesses: "[Their weaknesses / our advantage]"
+    - name: "[Competitor 2]"
+      website: "[URL]"
+      strengths: "[Their strengths]"
+      weaknesses: "[Their weaknesses / our advantage]"
+  monitoring_keywords:
+    - "medical supplies Africa"
+    - "healthcare products CEMAC"
+    - "pharmaceutical distributor Africa"
+    - "[YOUR PRODUCT CATEGORY] Africa"
+
+##############################################################################
+#  SOCIAL MEDIA STRATEGY
+##############################################################################
+social_media:
+  posting_frequency:
+    facebook: "2x daily"
+    instagram: "1x daily + 3 stories"
+    linkedin: "1x daily"
+    twitter_x: "3x daily"
+    tiktok: "1x daily"
+    whatsapp_broadcast: "2x weekly"
+  content_pillars:
+    - "Product education (30%)"
+    - "Health tips for African audiences (25%)"
+    - "Customer success stories (20%)"
+    - "Company culture & behind-scenes (10%)"
+    - "Industry news & thought leadership (15%)"
+  hashtag_strategy:
+    branded: ["#OpesHealth", "#HealthcareAfrica", "[ADD YOUR BRANDED HASHTAGS]"]
+    industry: ["#AfricaHealth", "#HealthAfrica", "#MedicalAfrica", "#SanteAfrique"]
+    regional: ["#CEMAC", "#WestAfrica", "#EastAfrica", "#AfricaRising"]
