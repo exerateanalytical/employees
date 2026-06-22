@@ -158,8 +158,10 @@ products:
       - "Reporting — clinical and operational reports"
     target_customer: "Clinics, health centres, small hospitals, general practitioners"
     pricing:
-      saas: "150,000 FCFA/month"
-      perpetual: "From 2,500,000 FCFA + 15–20% annual maintenance"
+      model: "Perpetual licence — installed on the clinic's own computers or server"
+      price: "From 2,500,000 FCFA"
+      annual_maintenance: "15–20% of licence value"
+      note: "Works fully offline. Synchronises to online server when internet available."
 
   - id: "P003"
     number: 3
@@ -227,8 +229,10 @@ products:
     target_customer: "Any hospital or clinic — even those using non-OPES systems"
     strategic_value: "Low-friction entry point. Works standalone before full OPES deployment."
     pricing:
-      saas: "150,000 FCFA/month"
-      perpetual: "From 5,000,000 FCFA"
+      model: "Perpetual licence — installed on-premise"
+      price: "From 5,000,000 FCFA"
+      annual_maintenance: "15–20% of licence value"
+      note: "Works fully offline. No need to replace existing hospital software."
 
   # ── DIAGNOSTICS (3 systems) ────────────────────────────────────────────────
 
@@ -480,8 +484,9 @@ products:
       - "Integration with all OPES clinical systems"
     target_customer: "All hospitals and clinics — especially those transitioning from paper"
     pricing:
-      saas: "100,000 FCFA/month"
-      perpetual: "4,000,000 FCFA"
+      model: "Perpetual licence — installed on-premise"
+      price: "4,000,000 FCFA"
+      annual_maintenance: "15–20% of licence value"
 
   - id: "P022"
     number: 22
@@ -551,30 +556,102 @@ products:
 #  PRICING COMPLETE REFERENCE
 ##############################################################################
 pricing:
+  model_overview: >
+    OPES Health Systems sells software licences — customers own the software.
+    All 21 clinical and administrative systems are installed directly on the
+    hospital's or clinic's own infrastructure (on-premise). They also synchronise
+    with an online server when connectivity is available.
+    The ONLY subscription/SaaS product is OPESCare Health ID, which requires
+    a live connection to the national interoperability layer.
+    There is no SaaS model for EMR, HIS, Lab, Pharmacy, Radiology, or any
+    specialist system — those are perpetual licences installed on-site.
+
   licensing_models:
-    saas: "Monthly payment; hosting, updates, and support bundled; no upfront infrastructure"
-    perpetual: "One-time payment; unlimited usage rights; 15–20% annual maintenance"
-    hybrid: "Combination of perpetual license + cloud services"
+    perpetual_on_premise:
+      description: >
+        One-time licence fee. Software is installed on the facility's own servers
+        or computers. The facility owns the software permanently. Works fully
+        offline. Synchronises with the facility's online server when internet is
+        available. Annual maintenance contract (15–20%) covers updates and support.
+      applies_to: "All 21 systems EXCEPT OPESCare Health ID"
+    saas_subscription:
+      description: >
+        Monthly subscription. Hosted and managed by OPES. Requires internet
+        connectivity. OPES handles infrastructure, updates, backups, and uptime.
+      applies_to: "OPESCare Health ID ONLY (national interoperability layer)"
+    hybrid:
+      description: >
+        On-premise perpetual licence + optional cloud synchronisation to a
+        central server (facility's own cloud or OPES-managed). Data stays
+        on-site; analytics and reporting are available centrally.
+      applies_to: "Available for all perpetual-licence products"
+
+  key_clarification_for_sales: >
+    When prospects ask about pricing, always clarify:
+    - They BUY the software (perpetual licence). They own it.
+    - It is installed ON THEIR PREMISES — their servers, their infrastructure.
+    - It works OFFLINE — no internet required for daily clinical operations.
+    - It SYNCHRONISES to their online server when connectivity is available.
+    - The only exception is OPESCare Health ID, which is subscription-based
+      because it connects to the national health identity infrastructure.
+    - Annual maintenance (15–20% of licence value) covers updates and support.
 
   price_table:
-    "OPES Clinic (EMR)": { saas: "150,000 FCFA/mo", perpetual: "From 2,500,000 FCFA" }
-    "OPES Hospital HIS — Small": { perpetual: "From 15,000,000 FCFA" }
-    "OPES Hospital HIS — Medium/Large": { perpetual: "From 25,000,000–50,000,000 FCFA" }
-    "OPES Lab IS": { perpetual: "From 3,000,000 FCFA" }
-    "PHARMIS": { perpetual: "From 2,500,000 FCFA" }
-    "RADIS": { perpetual: "From 4,000,000 FCFA" }
-    "CARDIS": { perpetual: "From 4,000,000 FCFA" }
-    "DENTIS": { perpetual: "From 2,500,000 FCFA" }
-    "DERMIS": { perpetual: "From 2,500,000 FCFA" }
-    "PAEDIS": { perpetual: "From 3,000,000 FCFA" }
-    "GYNOBSIS": { perpetual: "From 3,500,000 FCFA" }
-    "OPESCare — Single Hospital": { perpetual: "From 25,000,000 FCFA" }
-    "OPESCare — Multi-Hospital Network": { perpetual: "From 50,000,000 FCFA" }
-    "OPES Health ID — Facility": { perpetual: "From 5,000,000 FCFA" }
-    "OPES CDMS": { saas: "100,000 FCFA/mo", perpetual: "4,000,000 FCFA" }
-    "Opes Triage": { saas: "150,000 FCFA/mo", perpetual: "5,000,000 FCFA" }
-    "OPES CDSS — Hospital": { perpetual: "10,000,000 FCFA" }
-    "Insurance / Public Health / National Platform": "Quote on request"
+    "OPES EMR (Clinic)":
+      model: "Perpetual licence — installed on-premise"
+      price: "From 2,500,000 FCFA"
+      note: "Annual maintenance: 15–20%"
+    "OPES Hospital HIS — Small":
+      model: "Perpetual licence — installed on-premise"
+      price: "From 15,000,000 FCFA"
+    "OPES Hospital HIS — Medium/Large":
+      model: "Perpetual licence — installed on-premise"
+      price: "From 25,000,000–50,000,000 FCFA"
+    "OPES Lab IS":
+      model: "Perpetual licence — installed on-premise"
+      price: "From 3,000,000 FCFA"
+    "PHARMIS":
+      model: "Perpetual licence — installed on-premise"
+      price: "From 2,500,000 FCFA"
+    "RADIS":
+      model: "Perpetual licence — installed on-premise"
+      price: "From 4,000,000 FCFA"
+    "CARDIS":
+      model: "Perpetual licence — installed on-premise"
+      price: "From 4,000,000 FCFA"
+    "DENTIS":
+      model: "Perpetual licence — installed on-premise"
+      price: "From 2,500,000 FCFA"
+    "DERMIS":
+      model: "Perpetual licence — installed on-premise"
+      price: "From 2,500,000 FCFA"
+    "PAEDIS":
+      model: "Perpetual licence — installed on-premise"
+      price: "From 3,000,000 FCFA"
+    "GYNOBSIS":
+      model: "Perpetual licence — installed on-premise"
+      price: "From 3,500,000 FCFA"
+    "OPESCare — Single Hospital":
+      model: "SUBSCRIPTION (SaaS) — requires internet — national Health ID layer"
+      price: "From 25,000,000 FCFA"
+    "OPESCare — Multi-Hospital Network":
+      model: "SUBSCRIPTION (SaaS) — requires internet — national Health ID layer"
+      price: "From 50,000,000 FCFA"
+    "OPES Health ID — Facility":
+      model: "SUBSCRIPTION (SaaS)"
+      price: "From 5,000,000 FCFA"
+    "OPES CDMS":
+      model: "Perpetual licence — installed on-premise"
+      price: "4,000,000 FCFA"
+    "Opes Triage":
+      model: "Perpetual licence — installed on-premise"
+      price: "From 5,000,000 FCFA"
+    "OPES CDSS — Hospital":
+      model: "Perpetual licence — installed on-premise"
+      price: "10,000,000 FCFA"
+    "Insurance / Public Health / National Platform":
+      model: "Quote on request"
+      price: "Contact OPES"
 
   professional_services:
     implementation: "From 1,500,000 FCFA"
@@ -720,15 +797,31 @@ technical:
   moh_reporting: "DHIS2-compatible exports"
 
   deployment_models:
-    on_premise:
-      description: "Hosted on facility's own servers; full data control; offline-capable; optional cloud sync"
-      best_for: "Hospitals, hospital networks, government institutions, insurance organizations"
-    cloud_by_opes:
-      description: "Managed hosting in Cameroon data centres; automatic updates; managed backups; DR included"
-      best_for: "Clinics, medical centres, growing healthcare organizations"
-    hybrid:
-      description: "Local on-premise server + secure cloud synchronization; data sovereignty + centralized reporting"
-      best_for: "Regional hospitals, hospital groups, government programmes"
+    standard_on_premise:
+      description: >
+        The DEFAULT model for all 21 systems (everything except OPESCare Health ID).
+        Software is installed on the facility's own servers or computers.
+        The facility OWNS the software (perpetual licence). Works fully offline —
+        no internet required for daily clinical operations. Synchronises
+        automatically to the facility's own online server when connectivity
+        is available. Data never leaves the facility without their control.
+      best_for: "All hospitals, clinics, labs, pharmacies — any facility type"
+    hybrid_sync:
+      description: >
+        On-premise installation + optional synchronisation to a central cloud server
+        (the facility's own cloud, or OPES-managed hosting). Clinical staff work
+        offline on-site; management and analytics are available online centrally.
+      best_for: "Hospital networks, multi-site facilities, government health systems"
+    opescare_subscription:
+      description: >
+        OPESCare Health ID is the ONLY subscription product. It requires internet
+        because it connects to the national health identity and interoperability
+        infrastructure (Master Patient Index, HIE, Provider Registry, etc.).
+      best_for: "National programmes, hospital networks, Ministry of Health"
+    note: >
+      OPES does NOT operate a SaaS model for clinical systems. Hospitals and clinics
+      install the software on-premise and own it. This gives them full data sovereignty,
+      offline capability, and no dependency on OPES servers for daily operations.
 
   infrastructure:
     offline_mode: "Critical clinical data synchronized locally; replicates to central server on reconnection"
