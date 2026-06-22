@@ -22,6 +22,11 @@ Usage:
   python main.py evolve                # evolve all 8 agents
   python main.py evolve amara kofi     # evolve specific agents
   python main.py evolve --status       # show evolution history
+
+  # Phase 4: multi-agent collaboration workflows:
+  python main.py collaborate "New lead: Dr. Bello at Lagos General, interested in OPES EMR"
+  python main.py collaborate --workflow market_expansion --country Gabon --product-focus "OPES EMR"
+  python main.py collaborate --list    # show all workflows
 """
 
 from __future__ import annotations
@@ -102,5 +107,8 @@ if __name__ == "__main__":
     elif args[0] == "evolve":
         import subprocess
         subprocess.run([sys.executable, "self_improve.py"] + args[1:])
+    elif args[0] == "collaborate":
+        import subprocess
+        subprocess.run([sys.executable, "collaborate.py"] + args[1:])
     else:
         show_help()

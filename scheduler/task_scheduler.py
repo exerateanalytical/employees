@@ -152,6 +152,16 @@ def atlas_tender_scan():
     log.info("ATLAS: tender scan completed")
 
 
+def collaborative_weekly_review():
+    """Phase 4: All agents collaborate on the weekly review (Friday 3pm)."""
+    from orchestrator.workflows import build_workflow
+    from datetime import datetime
+    week = datetime.utcnow().strftime("Week %W, %B %Y")
+    pipeline = build_workflow("weekly_review", {"week": week, "highlights": ""})
+    pipeline.run({"week": week, "highlights": ""}, verbose=False)
+    log.info("COLLABORATION: weekly review pipeline completed")
+
+
 def evolve_all_agents():
     """Phase 3: Run one evolution cycle for all 8 agents (Sunday 2am)."""
     from improver import ABTester
@@ -212,5 +222,8 @@ def build_scheduler() -> BackgroundScheduler:
 
     # PHASE 3 — Automatic prompt evolution every Sunday at 2am
     scheduler.add_job(evolve_all_agents, CronTrigger(day_of_week="sun", hour=2, timezone=TZ), id="evolution")
+
+    # PHASE 4 — Collaborative weekly review every Friday at 3pm
+    scheduler.add_job(collaborative_weekly_review, CronTrigger(day_of_week="fri", hour=15, timezone=TZ), id="collab_review")
 
     return scheduler
